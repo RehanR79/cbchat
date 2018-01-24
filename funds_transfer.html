@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Responsive Chat Template | PrepBootstrap</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="">
+    <ul class="dropdown-menu pb-chat-dropdown">
+      <li>
+        <div class="panel panel-info pb-chat-panel">
+          <div class="panel-heading pb-chat-panel-heading">
+            <div class="row">
+              <div class="col-xs-12"> <a href="javascript:void(0)"> <span class="pb-chat-fa-user"><img src="images/avi.png" height="24" alt="Avi"></span><span class="chat-user">Chat with Avi</span></a> 
+              <div class="hamburgur-contr">
+              <a href="#"><span class="fa fa-bars pull-right pb-chat-top-icons"></span></a>
+              <div class="hamburgur-contr-list">
+              <ul>
+              	<li><a href="#">Profile</a></li>
+              	<li><a href="#">Conversation Style</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Log out</a></li>
+              </ul>
+              </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="scroll-section">
+              <div id="section1">
+                <div class="label label-default pb-chat-labels pull-left clear">Hello, again!  <img src="images/relief.png"><span class="time time1"></span></div>
+                
+                <!--<div class="label label-default pb-chat-labels pull-left clear">How can I help you today?<span class="time time1"></span></div>-->
+              </div>
+              <div id="section2" class="disN">
+                <div class="label label-primary pb-chat-labels pull-right clear ele">Transfer Money<span class="time time1"></span></div>
+                <div class="suggest-contr clear clrDiv mT20 text-center ele"> <a href="javascript:void(0)" class="btn btn-hollow">Get Registered Payees</a> <a href="javascript:void(0)" class="btn btn-hollow btn4">Other Payees</a></div>
+              </div>
+              <div id="section3" class="disN mT20">
+              	<div class="clear ele formPanel">
+                	<form class="form-horizontal">
+                      <div class="form-group">
+                        <label class="control-label col-sm-3" for="email">Phone Number</label>
+                        <div class="col-sm-6">
+                          <input type="phone" class="form-control" id="phone">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                      	<div class="col-sm-3 col-xs-3"><label class="radio-inline"><input type="radio" name="optradio" checked>MMID</label></div>
+					  	<div class="col-sm-3 col-xs-3"><label class="radio-inline"><input type="radio" name="optradio">UPI</label></div>
+					  	<div class="col-sm-3 col-xs-3"><label class="radio-inline"><input type="radio" name="optradio">Aadhar</label> </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-3" for="pwd">MMID</label>
+                        <div class="col-sm-6">
+                          <input type="mmid" class="form-control" id="mmid">
+                        </div>
+                      </div>
+                      <div class="form-group mB0">
+                        <label class="control-label col-sm-3" for="pwd">Amount</label>
+                        <div class="col-sm-6">
+                          <input type="mmid" class="form-control" id="mmid">
+                        </div>
+                      </div>
+                   </form> 
+                </div>
+                <!--<div class="label label-default pb-chat-labels pull-left clear ele">You can now pay multiple bills in one go. <img src="images/relief.png"><span class="time time3"></span></div>
+                <div class="label label-default pb-chat-labels pull-left clear ele mB20">Select those you want to pay<span class="time time3"></span></div>
+                <div class="clear text-center ele">10% off on a total bill amount of ₹5000<img src="images/relief.png" class="mL5"></div>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="clear ele selectTable mT10">
+                  <tr id="phoneBill">
+                  	<td width="41%"><img id="icon1" src="images/mobile-recharge.png">My Phone</td>
+                    <td width="30%" align="right"><span class="amount amount1"><i class="fa fa-inr"></i> 3,210.00</span></td>
+                    <td width="29%">Due Today</td>
+                  </tr>
+                  <tr id="elecBill">
+                  	<td><img id="icon2" src="images/electricity.png">Electricity</td>
+                    <td align="right"><span class="amount amount2"><i class="fa fa-inr"></i> 1,800.00</span></td>
+                    <td>Due on 12 Sep</td>
+                  </tr>
+                  <tr>
+                  	<td><img src="images/gas-line.png">Gas Line</td>
+                    <td align="right"><span class="amount"><i class="fa fa-inr"></i> 209.00</span></td>
+                    <td>Due on 15 Sep </td>
+                  </tr>
+               </table>
+               <table id="totalTable" width="100%" border="0" cellspacing="0" cellpadding="0" class="clear ele selectTable">   
+                  <tr class="total disN">
+                  	<td width="41%" align="right"><span class="amount">Total</span></td>
+                    <td align="right"><i class="fa fa-inr mL10"></i> 5,010.00</td>
+                    <td width="29%">&nbsp;</td>
+                  </tr>
+                  <tr class="total disN">
+                  	<td colspan="3" align="center"><span class="amount"><img src="images/hug.png"><span class="fS16"> Your discounted total is</span></span> <br><i class="fa fa-inr fS20"></i><span class="fS20"> 4,510.00</span></td>
+                  </tr>
+                </table>-->
+                
+                <!--<div class="clear mT20 ele"><img id="image5" src="images/chatbot05.png" usemap="#Map" class="img-responsive">
+                  <map name="Map">
+                    <area id="img5Spot1" shape="rect" coords="18,10,98,89" href="javascript:void(0)">
+                  </map>
+                </div>-->
+                
+                <div class="suggest-contr text-center mT20 ele"> <a href="javascript:void(0)" class="btn btn-hollow btn5">Go</a></div>
+                <div class="clear blank-div1">&nbsp;</div>
+              </div>
+              <div id="section5" class="disN mT20">
+                <div class="label label-default pb-chat-labels pull-left clear ele">You have insufficient balance in your usual account to complete the transfer.<span class="time time5"></span></div>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="info-table clear ele">
+                  <tr>
+                  <tr class="error">
+                    <td><img src="images/error.png" class="pull-left">
+                    	<div class="pull-left"><span class="account">Personal</span><br>
+                      <a href="javascript:void(0)">xxxxxxxxxxxx9077</a></div></td>
+                    <td width="10%"><span class="amount">Bal</span></td>
+                    <td><i class="fa fa-inr"></i> 10,210.00</td>
+                  </tr>
+                </table>
+                <div class="label label-default pb-chat-labels pull-left clear ele mT10">You can use the following alternatives instead:<span class="time time5"></span></div>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="info-table clear ele">
+                  <tr>
+                  <tr id="personalAcc">
+                    <td><div id="icon3" class="circle pull-left mR10">CA</div>
+                    	<div class="pull-left"><span class="account">Pay from Current A/c</span><br>
+                      <a href="javascript:void(0)">xxxxxxxxxxxx9217</a></div></td>
+                    <td width="10%"><span class="amount">Bal</span></td>
+                    <td><i class="fa fa-inr"></i> 11,209.00</td>
+                  </tr>
+                  <tr>
+                  	<td><div class="circle pull-left mR10">CC</div><span class="account">Pay from Credit Card</span><br>
+                      <a href="javascript:void(0)">xxxxxxxxxxxx9217</a></td>
+                    <td><span class="amount">Bal</span></td>
+                    <td><i class="fa fa-inr"></i> 78,098.00</td>
+                  </tr>
+                </table>
+                <div class="suggest-contr text-center mT20 ele"> <a href="javascript:void(0)" class="btn btn-hollow btn7 disN">Pay</a></div>
+                <div class="clear blank-div3">&nbsp;</div>
+              </div>
+              <div id="section6" class="disN mT20">
+              	<div class="label label-default pb-chat-labels pull-left clear ele"><img src="images/thumb.png">Touch ID to Pay<span class="time time6"></span></div>
+                <div class="suggest-contr text-center mT20 clear ele"> <a href="javascript:void(0)" class="btn btn-hollow btn8">Use PIN instead</a></div>
+                <div class="clear blank-div4">&nbsp;</div>
+              </div>
+              <div id="section7" class="disN mT20">
+              	<div id="numberPad" class=" text-center">
+                	<input id="pin1" type="text" size="4" maxlength="1" pattern="[0-9]*" value="">
+                    <input id="pin2" type="text" size="4" maxlength="1" pattern="[0-9]*" value="">
+                    <input id="pin3" type="text" size="4" maxlength="1" pattern="[0-9]*" value="">
+                    <input id="pin4" type="text" size="4" maxlength="1" pattern="[0-9]*" value="" onKeyUp="showNext()">
+                </div>
+                <div class="clear blank-div5">&nbsp;</div>
+              </div>
+              <div id="section8" class="disN mT20">
+              	<span class="ele">&nbsp;</span> 
+                <div class="text-center clear ele confirmation">
+                	<img src="images/tickCircle.png">
+                    <p class="mT20">Transfer successful!</p>
+                </div>
+                <div class="label label-default pb-chat-labels pull-left clear mT20 ele">Do you want to add +91-9878763523 to you list of payees?  <span class="time time7"></span></div>
+                <div class="suggest-contr text-center mT20 clear ele"> <a href="javascript:void(0)" class="btn btn-hollow  mR5">Add Payee
+</a></div>
+              </div>
+              <!--<div id="section9" class="disN">
+                <div class="label label-default pb-chat-labels pull-left clear mT20 ele">Your reminder has been set for 10:30 am on 15 September  <span class="time time8"></span></div>
+              </div>-->
+              <div class="clear blank-div6">&nbsp;</div>
+              <!--<div class="label label-primary pb-chat-labels pull-right clear">How can I help you? </div>--> 
+            </div>
+            <div class="clearfix"></div>
+            <!--<div class="suggest-contr defaultPanel sticky-btn-panel"><a href="javascript:void(0)" class="btn btn-hollow btn1">Pay Bills</a> <a href="javascript:void(0)" class="btn btn-hollow btn3">Statement</a> <a href="javascript:void(0)" class="btn btn-hollow btn2">Transfer Money</a>  </div>-->
+          </div>
+          <div class="panel-footer">
+            <div class="row">
+              <div class="col-xs-10">
+                <input type="text" class="form-control inputBox" rows="1" placeholder="Type here..." onKeyUp="autoSuggest(),checkKeyPress(event)">
+              </div>
+              <div class="pb-btn-circle-div pull-left">
+                <button class="btn btn-default-hollow"><span class="icon fa fa-microphone"></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+</body>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script language="javascript">
+$("#pin1,#pin2,#pin3,#pin4").val("")
+
+function formatAMPM(date) {
+  var hours = date.getHours();
+  var minutes = date.getMinutes();
+  var ampm = hours >= 12 ? 'PM' : 'AM';
+  hours = hours % 12;
+  hours = hours ? hours : 12; // the hour '0' should be '12'
+  minutes = minutes < 10 ? '0' + minutes : minutes;
+  var strTime = hours + ':' + minutes + ' ' + ampm;
+  return strTime;
+}
+
+var dt = formatAMPM(new Date());
+$(".time1").html(dt)
+$('.ele').hide();
+ function autoSuggest(){
+	 str = $(".inputBox").val()
+	 if (~str.indexOf("PA") || ~str.indexOf("pa") || ~str.indexOf("Pa")){
+	 	$(".btn2").html("Pay a friend")
+		$(".btn3").html("Pay Credit Card")
+		$(".btn3").show()
+	 }
+	 else if (~str.indexOf("Tra") || ~str.indexOf("tra")){
+	 	$(".btn1").html("Transfer Money")
+		$(".btn1").attr("href","../flow2/index.html")
+		$(".btn2").html("Transfer ₹12,000 to Landlord ")
+		$(".btn3").hide()
+	 }
+	 else{
+		$(".btn1").html("Pay Bills") 	
+		$(".btn2").html("Transfer Money")
+		$(".btn3").html("Statement")
+		$(".btn3").show()	 
+	 }
+ }
+ 
+$("#section2").show();
+$('#section2 > .ele')
+.each(function(index){
+	var _this = this;
+	setTimeout( function(){ $(_this).fadeIn('slow'); }, 1000*index );
+});
+var dt = formatAMPM(new Date());
+$(".time2").html(dt)
+$(".defaultPanel").hide()
+
+$(".btn4").click(function(){
+	$("#section3").show();
+	$(".btn4").addClass("selected")
+	$(".btn4").text("✓ Other Payees")
+	$('#section3 > .ele')
+	.each(function(index){
+		var _this = this;
+        setTimeout( function(){ $(_this).fadeIn('slow'); }, 1000*index );
+		$('.scroll-section').animate({
+        scrollTop: 1800
+    }, 'slow');
+    });
+	var dt = formatAMPM(new Date());
+	$(".time3").html(dt)
+	$(".panel-body").addClass("pR0");
+		
+})
+
+$(".btn5").click(function(){
+	$('.blank-div1').hide();
+	$("#section5").show();
+	$(".btn5").addClass("selected")
+	$(".btn5").text("✓ Go")
+	$('#section5 > .ele')
+    .each(function(index){
+		var _this = this;
+        setTimeout( function(){ $(_this).fadeIn('slow'); }, 1000*index );
+		$('.scroll-section').animate({
+        scrollTop: 2000
+    }, 'slow');
+    });
+	var dt = formatAMPM(new Date());
+	$(".time5").html(dt)
+	
+    return false;
+		
+})
+
+$(".btn6").click(function(){
+	$('.blank-div2').hide();
+	$("#section5").show();
+	$('#section5 > .ele')
+    .each(function(index){
+		var _this = this;
+        setTimeout( function(){ $(_this).fadeIn('slow'); }, 1000*index );
+		$('.scroll-section').animate({
+        scrollTop: 2200
+    }, 'slow');
+	
+    });
+	var dt = formatAMPM(new Date());
+	$(".time5").html(dt)
+	
+    return false;	
+})
+
+$(".btn7").click(function(){
+	$('.blank-div3').hide();
+	$(".btn7").addClass("selected")
+	$(".btn7").text("✓ Pay")
+	$("#section6").show();
+	$('#section6 > .ele')
+    .each(function(index){
+		var _this = this;
+        setTimeout( function(){ $(_this).fadeIn('slow'); }, 1000*index );
+		$('.scroll-section').animate({
+        scrollTop: 2400
+    }, 'slow');
+    });
+	var dt = formatAMPM(new Date());
+	$(".time6").html(dt)
+    return false;	
+})
+
+$(".btn8").click(function(){
+	$('.blank-div4').hide();
+	$("#section7").show();
+	$(".btn8").addClass("selected")
+	$(".btn8").text("✓ Use PIN instead")
+	$('#section7 > .ele')
+    .each(function(index){
+		var _this = this;
+        setTimeout( function(){ $(_this).fadeIn('slow'); }, 1000*index );
+		$('.scroll-section').animate({
+        scrollTop: 2400
+    }, 'slow');
+    });
+	var dt = formatAMPM(new Date());
+	$(".time7").html(dt)
+	
+    return false;	
+})
+
+$(".btn9").click(function(){
+	$('.blank-div5').hide();
+	$(".btn9").addClass("selected")
+	$(".btn9").text("✓ Set Reminder")
+	$("#section9").show();
+	$('#section9 > .ele')
+    .each(function(index){
+		var _this = this;
+        setTimeout( function(){ $(_this).fadeIn('slow'); }, 1000*index );
+		$('.scroll-section').animate({
+        scrollTop: 2700
+    }, 'slow');
+    });
+	var dt = formatAMPM(new Date());
+	$(".time9").html(dt)
+	
+    return false;	
+})
+
+$("#phoneBill").click(function(){
+	$("#icon1,#icon2").attr("src","images/tick.png")
+	$("#phoneBill,#elecBill").addClass("selected")
+	$(".amount1").html('<i class="fa fa-inr mR5"></i><input type="text" value="3,210" size="5">')
+	$(".amount2").html('<i class="fa fa-inr mR5"></i><input type="text" value="1,800" size="5">')
+	$(".total").show()
+	$(".btn5").show()
+})
+
+$("#personalAcc").click(function(){
+	$("#icon3").removeClass("circle")
+	$("#icon3").html('<img id="icon1" src="images/tick1.png">')
+	$("#personalAcc").addClass("selected")
+	$(".btn7").show()
+})
+ 
+ counter = 1;
+var mname;
+function checkKeyPress(e){
+	if($(".inputBox").val() != "")
+		$('.icon').addClass('fa-paper-plane').removeClass('');
+	else
+		$('.icon').addClass('fa-microphone').removeClass('fa-paper-plane');
+	var code;
+	if(e != ''){
+	  if(window.event){ //IE
+	   code = e.keyCode;
+	  }
+	  else{ //other browsers
+		code = e.which;
+	  }
+	  if(code == 13)
+	  	sendMessage();
+	}
+}
+
+function sendMessage(){
+	str = '<div class="label label-primary pb-chat-labels pull-right clear">' + $(".inputBox").val() + '<span class="time">' + formatAMPM(new Date()) + '</span></div>'
+	$(".inputBox").val('')
+	$('.icon').addClass('fa-microphone').removeClass('fa-paper-plane');
+	$("#chatHistory").append(str)
+	setTimeout("enterMessage()",2000);
+}
+
+function enterMessage(){
+	switch(counter){
+		case 1:
+				str = '<div class="label label-default pb-chat-labels pull-left clear">Plenty! &#x263A<span class="time">' + formatAMPM(new Date()) +'</div>'
+				break;
+		case 2:
+				str = '<div class="label label-default pb-chat-labels pull-left clear">Table goes here<span class="time">' + formatAMPM(new Date()) +'</div>'
+				break;
+	}
+	$("#chatHistory").append(str)
+	counter++
+}
+
+$(document).ready(function(){
+	$('.hamburgur-contr').click(function(){
+		$('.hamburgur-contr-list').slideToggle('slow');	
+	})
+	
+	$('#pin1').keyup(function() {
+		if(this.value.length == $(this).attr('maxlength')) {
+         $('#pin2').focus();
+     }
+	});
+	$('#pin2').keyup(function() {
+		if(this.value.length == $(this).attr('maxlength')) {
+         $('#pin3').focus();
+     }
+	});
+	$('#pin3').keyup(function() {
+		if(this.value.length == $(this).attr('maxlength')) {
+         $('#pin4').focus();
+     }
+	});
+})
+
+function showNext(){
+	if($("#pin4").val() != ""){
+		$('.blank-div5').hide();
+	$("#section8").show();
+	$('#section8 > .ele')
+    .each(function(index){
+		var _this = this;
+        setTimeout( function(){ $(_this).fadeIn('slow'); }, 2000*index );
+		$('.scroll-section').animate({
+        scrollTop: 2700
+    }, 'slow');
+    });
+	var dt = formatAMPM(new Date());
+	$(".time8").html(dt)
+	
+    return false;		
+	}
+}
+</script>
+</html>
